@@ -5,7 +5,11 @@ let cart = [];
 document.querySelectorAll('form').forEach(function(form) {
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
-        alert('Thank you for subscribing');
+        if (form.id === 'contactForm') {
+            alert('Thank you for your message');
+        } else {
+            alert('Thank you for subscribing');
+        }
     });
 });
 
@@ -63,10 +67,3 @@ function processOrder() {
     // For example, you can send the cart data to a server-side script for further processing
     // After processing, you can clear the cart or perform any other necessary actions
 }
-
-// Web Form Alert (About Us/Contact Page)
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-    alert('Thank you for your message');
-});
-
