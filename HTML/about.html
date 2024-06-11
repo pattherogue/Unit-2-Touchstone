@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABC Fitness Studio - About Us</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -12,10 +13,10 @@
         <nav>
             <!-- Add your navigation links here -->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Custom Page</a></li>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>                
             </ul>
         </nav>
         <!-- Logo and Client Name -->
@@ -27,19 +28,17 @@
 
     <!-- Main Content Section -->
     <main>
-        <!-- About Us Section -->
+        <!-- Description of the client -->
         <section>
             <h2>About Us</h2>
-            <!-- Add a description of the client/business here -->
             <p>Welcome to ABC Fitness Studio! We are dedicated to helping you achieve your fitness goals...</p>
-            <!-- Add business hours -->
+            <!-- Business hours -->
             <p>Business Hours: Mon-Fri 6am-9pm, Sat-Sun 8am-6pm</p>
         </section>
 
-        <!-- Contact Form Section -->
+        <!-- Form for client feedback and custom orders -->
         <section>
             <h2>Contact Us</h2>
-            <!-- Add your contact form here -->
             <form action="#" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -54,8 +53,35 @@
 
     <!-- Footer Section -->
     <footer>
-        <!-- Add your footer content here -->
-        <p>&copy; 2024 ABC Fitness Studio. All rights reserved.</p>
+        <!-- Subscribe to Newsletter Feature -->
+        <section>
+            <h2>Subscribe to Newsletter</h2>
+            <form action="#" method="POST">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Social Media Links -->
+        <section>
+            <h2>Follow Us</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </section>
+
+        <!-- Navigation Links to Other Webpages -->
+        <nav>
+            <!-- Add your navigation links here -->
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>                
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

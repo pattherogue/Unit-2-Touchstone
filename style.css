@@ -1,0 +1,128 @@
+/* Universal Styles */
+
+/* Resetting default margin and padding */
+body, h1, h2, p, ul, li, button, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body font and background */
+body {
+    font-family: Calibri, sans-serif;
+    background-color: ivory; /* Changed to ivory incline */
+    color: willowgray; /* Font color changed to willow gray */
+}
+
+/* Header Styles */
+header {
+    background-color: barbellblack; /* Changed to barbell black */
+    color: gainsgreen; /* Changed to gains green */
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: gainsgreen; /* Changed to gains green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Logo Styles */
+header div img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+}
+
+header div h1 {
+    font-size: 30px; /* Changed to 30px */
+    margin-top: 10px;
+    color: gainsgreen; /* Changed to gains green */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-family: "Trebuchet MS", sans-serif; /* Changed to Trebuchet MS */
+    font-weight: bold;
+    font-size: 25px; /* Changed to 25px */
+    color: barbellblack; /* Changed to barbell black */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px; /* Changed to 16px */
+    color: barbellblack; /* Changed to barbell black */
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    background-color: barbellblack; /* Changed to barbell black */
+    color: gainsgreen; /* Changed to gains green */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: barbellblack; /* Changed to barbell black */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gainsgreen; /* Changed to gains green */
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: gainsgreen; /* Changed to gains green */
+    color: barbellblack; /* Changed to barbell black */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: lateralime; /* Changed to lateral lime */
+}
+
+/* Gallery Styles */
+main section div {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: gainsgreen; /* Changed to gains green */
+    color: barbellblack; /* Changed to barbell black */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lateralime; /* Changed to lateral lime */
+}
