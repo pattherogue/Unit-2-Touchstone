@@ -8,15 +8,15 @@ body, h1, h2, p, ul, li, button, form {
 
 /* Body font and background */
 body {
-    font-family: Calibri, sans-serif;
-    background-color: ivory; /* Changed to ivory incline */
-    color: willowgray; /* Font color changed to willow gray */
+    font-family: 'Montserrat', sans-serif; /* Updated font */
+    background-color: #fcf8f2; /* Updated background color to Ivory Incline */
+    color: #5e6c6d; /* Updated font color to Willow Gray */
 }
 
 /* Header Styles */
 header {
-    background-color: barbellblack; /* Changed to barbell black */
-    color: gainsgreen; /* Changed to gains green */
+    background-color: #000000; /* Updated to Barbell Black */
+    color: #2aa786; /* Updated to Gains Green */
     padding: 20px;
     text-align: center;
 }
@@ -31,7 +31,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: gainsgreen; /* Changed to gains green */
+    color: #2aa786; /* Updated to Gains Green */
     text-decoration: none;
     font-weight: bold;
 }
@@ -45,7 +45,7 @@ header div img {
 header div h1 {
     font-size: 30px; /* Changed to 30px */
     margin-top: 10px;
-    color: gainsgreen; /* Changed to gains green */
+    color: #2aa786; /* Updated to Gains Green */
 }
 
 /* Main Content Styles */
@@ -54,23 +54,23 @@ main {
 }
 
 h2 {
-    font-family: "Trebuchet MS", sans-serif; /* Changed to Trebuchet MS */
+    font-family: 'Montserrat', sans-serif; /* Updated font */
     font-weight: bold;
     font-size: 25px; /* Changed to 25px */
-    color: barbellblack; /* Changed to barbell black */
+    color: #000000; /* Updated to Barbell Black */
     margin-bottom: 10px;
 }
 
 p {
     font-size: 16px; /* Changed to 16px */
-    color: barbellblack; /* Changed to barbell black */
+    color: #000000; /* Updated to Barbell Black */
     line-height: 1.5;
 }
 
 /* Footer Styles */
 footer {
-    background-color: barbellblack; /* Changed to barbell black */
-    color: gainsgreen; /* Changed to gains green */
+    background-color: #000000; /* Updated to Barbell Black */
+    color: #2aa786; /* Updated to Gains Green */
     padding: 20px;
     text-align: center;
 }
@@ -83,7 +83,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    color: barbellblack; /* Changed to barbell black */
+    color: #000000; /* Updated to Barbell Black */
 }
 
 input[type="text"],
@@ -92,21 +92,21 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid gainsgreen; /* Changed to gains green */
+    border: 1px solid #2aa786; /* Updated to Gains Green */
     border-radius: 5px;
 }
 
 button[type="submit"] {
     padding: 10px 20px;
-    background-color: gainsgreen; /* Changed to gains green */
-    color: barbellblack; /* Changed to barbell black */
+    background-color: #2aa786; /* Updated to Gains Green */
+    color: #000000; /* Updated to Barbell Black */
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: lateralime; /* Changed to lateral lime */
+    background-color: #a3c55f; /* Updated to Lateral Lime */
 }
 
 /* Gallery Styles */
@@ -115,8 +115,8 @@ main section div {
 }
 
 button {
-    background-color: gainsgreen; /* Changed to gains green */
-    color: barbellblack; /* Changed to barbell black */
+    background-color: #2aa786; /* Updated to Gains Green */
+    color: #000000; /* Updated to Barbell Black */
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -124,5 +124,5 @@ button {
 }
 
 button:hover {
-    background-color: lateralime; /* Changed to lateral lime */
+    background-color: #a3c55f; /* Updated to Lateral Lime */
 }
