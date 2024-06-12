@@ -98,3 +98,26 @@ function saveToLocalStorage() {
 
     localStorage.setItem('contactForm', JSON.stringify(formData));
 }
+
+function displayCart() {
+    const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+    const modal = document.getElementById('cartModal');
+    const span = document.getElementsByClassName("close")[0];
+    const itemsDisplay = document.getElementById('cartItems');
+    
+    itemsDisplay.innerHTML = ''; // Clear previous entries
+    cartItems.forEach(item => {
+        itemsDisplay.innerHTML += `${item.name} - $${item.price}<br>`;
+    });
+    
+    modal.style.display = "block";
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
