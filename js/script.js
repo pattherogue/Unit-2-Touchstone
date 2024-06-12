@@ -100,24 +100,29 @@ function saveToLocalStorage() {
 }
 
 function displayCart() {
-    const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
     const modal = document.getElementById('cartModal');
-    const span = document.getElementsByClassName("close")[0];
-    const itemsDisplay = document.getElementById('cartItems');
-    
-    itemsDisplay.innerHTML = ''; // Clear previous entries
-    cartItems.forEach(item => {
-        itemsDisplay.innerHTML += `${item.name} - $${item.price}<br>`;
-    });
-    
-    modal.style.display = "block";
-    span.onclick = function() {
-        modal.style.display = "none";
+    const cartItemsContainer = document.getElementById('cartItems');
+    cartItemsContainer.innerHTML = ''; // Clear previous entries
+
+    const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+    if (cartItems.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+    } else {
+        cartItems.forEach(item => {
+            cartItemsContainer.innerHTML += `<p>${item.name} - $${item.price}</p>`;
+        });
     }
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+
+    modal.style.display = "block"; // Show the modal
 }
 
+function closeModal() {
+    document.getElementById('cartModal').style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('cartModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
