@@ -126,3 +126,11 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const promos = document.querySelector('#promos');
+    let today = new Date();
+    if (today.getDay() === 5) {  // Special promos on Fridays
+        promos.innerHTML = '<p>Special Friday Offer: 30% off on all products!</p>';
+    }
+});
